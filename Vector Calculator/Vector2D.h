@@ -14,8 +14,10 @@
 #pragma once
 
 #include <iomanip>
-#include <string>
 #include <sstream>
+#include <string>
+#include <typeinfo>
+#include "OperationException.h"
 
 class Vector2D
 {
@@ -99,7 +101,7 @@ public:
 	/// </summary>
 	/// <param name="v">A 2D vector.</param>
 	/// <returns>The product of 2 2D vectors.</returns>
-	const Vector2D operator/(const Vector2D& v);
+	const Vector2D operator/(const Vector2D& v) const throw (OperationException);
 private:
 	double x, y; // x- and y-values of the 2D vector
 }; // end Vector2D

@@ -14,8 +14,9 @@
 #include "Vector2D.h"
 
 Vector2D::Vector2D()
-	: x(0.0), y(1.0)
 {
+	// initialize a 2D vector with default values
+	setVector(0.0, 1.0);
 } // end default constructor
 
 Vector2D::Vector2D(const double x, const double y)
@@ -67,21 +68,27 @@ const std::string Vector2D::toString(const int precision)
 
 const Vector2D Vector2D::operator+(const Vector2D& v)
 {
-	return Vector2D();
+	return Vector2D(x + v.x, y + v.y);
 } // end overloaded operator +
 
 const Vector2D Vector2D::operator-(const Vector2D& v)
 {
-	return Vector2D();
+	return Vector2D(x - v.x, y - v.y);
 } // end overloaded operator -
 
 const Vector2D Vector2D::operator*(const Vector2D& v)
 {
-	return Vector2D();
+	return Vector2D(x * v.x, y * v.y);
 } // end overloaded operator *
 
-const Vector2D Vector2D::operator/(const Vector2D& v)
+const Vector2D Vector2D::operator/(const Vector2D& v) const throw (OperationException)
 {
-	return Vector2D();
+	// if either or both the denominators are zero, throw an Operation Exception
+	// else return the quotient of the two 2D vectors
+	if (v.x == 0.0 || v.y == 0.0)
+		throw OperationException("Divide by zero exception caused by "
+			+ std::string() + typeid(v).name());
+	else
+		return Vector2D(x / v.x, y / v.y); // end if-else
 } // end overloaded operator /
 
