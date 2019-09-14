@@ -31,8 +31,8 @@ public:
 	/// A parameterized constructor. Sets the vector to the
 	/// parameter values.
 	/// </summary>
-	/// <param name="x">The 2D vector's x-value.</param>
-	/// <param name="y">The 2D vector's y-value.</param>
+	/// <param name="x">The 2D vector's x-value</param>
+	/// <param name="y">The 2D vector's y-value</param>
 	Vector2D(const double x, const double y);
 
 	/// <summary>
@@ -44,63 +44,63 @@ public:
 	/// Sets this 2D vector's x- and y-values using the parameter
 	/// values.
 	/// </summary>
-	/// <param name="x">The 2D vector's x-value.</param>
-	/// <param name="y">The 2D vector's y-value.</param>
+	/// <param name="x">The 2D vector's x-value</param>
+	/// <param name="y">The 2D vector's y-value</param>
 	void setVector(const double x, const double y);
 
 	/// <summary>
 	/// Gets this 2D vector's x-value.
 	/// </summary>
-	/// <returns>This 2D vector's x-value.</returns>
+	/// <returns>This 2D vector's x-value</returns>
 	const double getX();
 
 	/// <summary>
 	/// Gets this 2D vector's y-value.
 	/// </summary>
-	/// <returns>This 2D vector's y-value.</returns>
+	/// <returns>This 2D vector's y-value</returns>
 	const double getY();
 
 	/// <summary>
 	/// Formats this 2D vector as a string object without using
 	/// decimal precision.
 	/// </summary>
-	/// <returns>This 2D vector as a formatted string.</returns>
+	/// <returns>This 2D vector as a formatted string</returns>
 	const std::string toString();
 
 	/// <summary>
 	/// Using user-defined precision, formats this 2D vector as
 	/// a string object.
 	/// </summary>
-	/// <param name="precision">User-defined decimal precision.</param>
-	/// <returns>This 2D vector as a formatted string.</returns>
+	/// <param name="precision">User-defined decimal precision</param>
+	/// <returns>This 2D vector as a formatted string</returns>
 	const std::string toString(const int precision);
 
 	/// <summary>
 	/// Operator + overloader that computes the sum of 2 2D vectors.
 	/// </summary>
-	/// <param name="v">A 2D vector.</param>
-	/// <returns>The sum of 2 2D vectors.</returns>
+	/// <param name="v">A 2D vector</param>
+	/// <returns>The sum of 2 2D vectors</returns>
 	const Vector2D operator+(const Vector2D& v);
 
 	/// <summary>
 	/// Operator - overloader that computes the difference of 2 2D vectors.
 	/// </summary>
-	/// <param name="v">A 2D vector.</param>
-	/// <returns>The difference of 2 2D vectors.</returns>
+	/// <param name="v">A 2D vector</param>
+	/// <returns>The difference of 2 2D vectors</returns>
 	const Vector2D operator-(const Vector2D& v);
 
 	/// <summary>
 	/// Operator * overloader that computes the product of 2 2D vectors.
 	/// </summary>
-	/// <param name="v">A 2D vector.</param>
-	/// <returns>The product of 2 2D vectors.</returns>
+	/// <param name="v">A 2D vector</param>
+	/// <returns>The product of 2 2D vectors</returns>
 	const Vector2D operator*(const Vector2D& v);
 
 	/// <summary>
 	/// Operator / overloader that computes the quotient of 2 2D vectors.
 	/// </summary>
-	/// <param name="v">A 2D vector.</param>
-	/// <returns>The product of 2 2D vectors.</returns>
+	/// <param name="v">A 2D vector</param>
+	/// <returns>The product of 2 2D vectors</returns>
 	const Vector2D operator/(const Vector2D& v) const throw (OperationException);
 private:
 	double x, y; // x- and y-values of the 2D vector

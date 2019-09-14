@@ -83,8 +83,8 @@ const Vector2D Vector2D::operator*(const Vector2D& v)
 
 const Vector2D Vector2D::operator/(const Vector2D& v) const throw (OperationException)
 {
-	// if either or both the denominators are zero, throw an Operation Exception
-	// else return the quotient of the two 2D vectors
+	// if any of the denominators are zero, throw an OperationException
+	// else compute and return the quotient
 	if (v.x == 0.0 || v.y == 0.0)
 		throw OperationException("Divide by zero exception caused by "
 			+ std::string() + typeid(v).name());
