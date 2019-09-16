@@ -17,7 +17,7 @@ public:
 	/// <summary>
 	/// A parameterized constructor for throwing dimension exceptions.
 	/// </summary>
-	/// <param name="message">A message to instantiate the logic error.</param>
+	/// <param name="message">a message to instantiate the logic error</param>
 	OperationException(const std::string& message = "");
 }; // end OperationException
 

@@ -123,12 +123,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="InputException.cpp" />
     <ClCompile Include="OperationException.cpp" />
+    <ClCompile Include="Prompt.cpp" />
     <ClCompile Include="Vector2D.cpp" />
     <ClCompile Include="Vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="InputException.h" />
     <ClInclude Include="OperationException.h" />
+    <ClInclude Include="Prompt.h" />
     <ClInclude Include="Vector2D.h" />
     <ClInclude Include="Vector3D.h" />
   </ItemGroup>
