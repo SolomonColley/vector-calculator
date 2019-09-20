@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClInclude Include="Console.h" />
     <ClInclude Include="InputException.h" />
+    <ClInclude Include="MenuInterface.h" />
     <ClInclude Include="OperationException.h" />
     <ClInclude Include="Prompt.h" />
     <ClInclude Include="Vector2D.h" />
