@@ -15,7 +15,7 @@ class OperationException : public std::logic_error
 {
 public:
 	/// <summary>
-	/// A parameterized constructor for throwing dimension exceptions.
+	/// A parameterized constructor for throwing operation exceptions.
 	/// </summary>
 	/// <param name="message">a message to instantiate the logic error</param>
 	OperationException(const std::string& message = "");

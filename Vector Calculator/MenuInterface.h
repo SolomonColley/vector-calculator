@@ -4,6 +4,8 @@
 /// display themselves, prompt the user, parse the user's input, and
 /// return the user's selection. The type of selection is arbitrary.
 /// </summary>
+/// Author: Solomon Colley
+/// Since: 09/21/2019
 
 #pragma once
 

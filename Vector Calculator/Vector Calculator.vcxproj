@@ -123,21 +123,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CalculatorDriver.cpp" />
+    <ClCompile Include="CalculatorMenu.cpp" />
     <ClCompile Include="Console.cpp" />
+    <ClCompile Include="DecimalPrecision.cpp" />
+    <ClCompile Include="Dimension.cpp" />
+    <ClCompile Include="DimensionException.cpp" />
     <ClCompile Include="InputException.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="OperationException.cpp" />
     <ClCompile Include="Prompt.cpp" />
+    <ClCompile Include="StringFormatter.cpp" />
     <ClCompile Include="Vector2D.cpp" />
     <ClCompile Include="Vector3D.cpp" />
+    <ClCompile Include="VectorOperations.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CalculatorDriver.h" />
+    <ClInclude Include="CalculatorMenu.h" />
     <ClInclude Include="Console.h" />
+    <ClInclude Include="DecimalPrecision.h" />
+    <ClInclude Include="Dimension.h" />
+    <ClInclude Include="DimensionException.h" />
     <ClInclude Include="InputException.h" />
+    <ClInclude Include="MainMenu.h" />
     <ClInclude Include="MenuInterface.h" />
     <ClInclude Include="OperationException.h" />
     <ClInclude Include="Prompt.h" />
+    <ClInclude Include="StringFormatter.h" />
     <ClInclude Include="Vector2D.h" />
     <ClInclude Include="Vector3D.h" />
+    <ClInclude Include="VectorOperations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

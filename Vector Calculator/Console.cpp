@@ -8,16 +8,16 @@
 
 #include "Console.h"
 
-void Console::clearScreen()
+void Console::clear()
 {
-#ifdef WINDOWS
-	std::system("cls");
+#ifdef _WIN32 || _WIN64
+	system("cls");
 #else
-	std::system("clear");
+	system("clear");
 #endif
 } // end clearScreen
 
-void Console::writeString(const std::string& text)
+void Console::write(const std::string& text)
 {
 	std::cout << text;
 } // end writeString

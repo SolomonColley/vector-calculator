@@ -14,16 +14,17 @@
 
 class Console
 {
+public:
 	/// <summary>
 	/// Clears the console window or screen.
 	/// </summary>
-	static void clearScreen();
+	static void clear();
 
 	/// <summary>
 	/// Writes a string of text to the console window or screen.
 	/// </summary>
 	/// <param name="text">a string of text to be written to the
 	/// console window</param>
-	static void writeString(const std::string& text);
+	static void write(const std::string& text);
 }; // end Console
 
