@@ -101,7 +101,7 @@ public:
 	/// </summary>
 	/// <param name="v">a 2D vector</param>
 	/// <returns>the product of 2 2D vectors</returns>
-	const Vector2D operator/(const Vector2D& v) const throw (OperationException);
+	const Vector2D operator/(const Vector2D& v);
 private:
 	double x, y; // x- and y-values of the 2D vector
 }; // end Vector2D

@@ -1,6 +1,6 @@
 #include "Prompt.h"
 
-int Prompt::getInt(const std::string& prompt)
+int Prompt::getInt(const std::string & prompt)
 {
 	int input = 0;
 	bool isValid = false;
@@ -28,7 +28,7 @@ int Prompt::getInt(const std::string& prompt)
 	return input;
 } // end getInt
 
-int Prompt::getInt(const std::string& prompt, const int min, const int max)
+int Prompt::getInt(const std::string & prompt, const int min, const int max)
 {
 	int input = 0;
 	bool isValid = false;
@@ -54,7 +54,7 @@ int Prompt::getInt(const std::string& prompt, const int min, const int max)
 	return input;
 } // end getInt
 
-double Prompt::getDouble(const std::string& prompt)
+double Prompt::getDouble(const std::string & prompt)
 {
 	double input = 0.0;
 	bool isValid = false;
@@ -82,7 +82,7 @@ double Prompt::getDouble(const std::string& prompt)
 	return input;
 } // end getDouble
 
-double Prompt::getDouble(const std::string& prompt, const double min, const double max)
+double Prompt::getDouble(const std::string & prompt, const double min, const double max)
 {
 	double input = 0.0;
 	bool isValid = false;
@@ -108,7 +108,7 @@ double Prompt::getDouble(const std::string& prompt, const double min, const doub
 	return input;
 } // end getDouble
 
-std::string Prompt::getString(const std::string& prompt)
+std::string Prompt::getString(const std::string & prompt)
 {
 	std::string input = "";
 	bool isValid = false;
@@ -134,7 +134,7 @@ std::string Prompt::getString(const std::string& prompt)
 	return input;
 } // end getString
 
-std::string Prompt::getString(const std::string& prompt, const std::vector<std::string>& conditions)
+std::string Prompt::getString(const std::string & prompt, const std::vector<std::string> & conditions)
 {
 	std::string input = "";
 	bool isValid = false;
@@ -164,7 +164,7 @@ std::string Prompt::getString(const std::string& prompt, const std::vector<std::
 	return input;
 } // end getInput
 
-Vector2D Prompt::get2DVector(const std::string& prompt)
+Vector2D Prompt::get2DVector(const std::string & prompt)
 {
 	Vector2D v;
 	double x = 0.0, y = 0.0;
@@ -177,7 +177,7 @@ Vector2D Prompt::get2DVector(const std::string& prompt)
 	return v;
 } // end get2DVector
 
-Vector3D Prompt::get3DVector(const std::string& prompt)
+Vector3D Prompt::get3DVector(const std::string & prompt)
 {
 	Vector3D v;
 	double x = 0.0, y = 0.0, z = 0.0;

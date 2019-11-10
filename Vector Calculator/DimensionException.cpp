@@ -8,7 +8,7 @@
 
 #include "DimensionException.h"
 
-DimensionException::DimensionException(const std::string& message)
+DimensionException::DimensionException(const std::string & message)
 	: std::logic_error(message)
 {
 } // end parameterized constructor

@@ -73,22 +73,22 @@ const std::string Vector3D::toString(const int precision)
 	return ss.str();
 } // end toString
 
-const Vector3D Vector3D::operator+(const Vector3D& v)
+const Vector3D Vector3D::operator+(const Vector3D & v)
 {
 	return Vector3D(x + v.x, y + v.y, z + v.z);
 } // end overloaded operator +
 
-const Vector3D Vector3D::operator-(const Vector3D& v)
+const Vector3D Vector3D::operator-(const Vector3D & v)
 {
 	return Vector3D(x - v.x, y - v.y, z - v.z);
 } // end overloaded operator -
 
-const Vector3D Vector3D::operator*(const Vector3D& v)
+const Vector3D Vector3D::operator*(const Vector3D & v)
 {
 	return Vector3D(x * v.x, y * v.y, z * v.z);
 } // end overloaded operator *
 
-const Vector3D Vector3D::operator/(const Vector3D& v) const throw(OperationException)
+const Vector3D Vector3D::operator/(const Vector3D & v)
 {
 	// if any of the denominators are zero, throw an OperationException
 	// else compute and return the quotient

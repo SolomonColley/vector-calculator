@@ -18,8 +18,8 @@ void CalculatorDriver::addition()
 
 	try
 	{
-		// if using 2D or 3D vectors, compute the difference
-		// else throw an exception
+		// if using 2D or 3D vectors, compute the sum
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v1 = Prompt::get2DVector("\nCreate vector 1 ~\n");
@@ -37,7 +37,7 @@ void CalculatorDriver::addition()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -51,7 +51,7 @@ void CalculatorDriver::subtraction()
 	try
 	{
 		// if using 2D or 3D vectors, compute the difference
-		// else throw an exception
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v1 = Prompt::get2DVector("\nCreate vector 1 ~\n");
@@ -69,7 +69,7 @@ void CalculatorDriver::subtraction()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -80,10 +80,10 @@ void CalculatorDriver::multiplication()
 	int dimension = Dimension::getDimension();
 	int precision = DecimalPrecision::getPrecision();
 
-	// if using 2D or 3D vectors, compute the product
-	// else throw an exception
 	try
 	{
+		// if using 2D or 3D vectors, compute the product
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v1 = Prompt::get2DVector("\nCreate vector 1 ~\n");
@@ -101,7 +101,7 @@ void CalculatorDriver::multiplication()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -115,7 +115,7 @@ void CalculatorDriver::division()
 	try
 	{
 		// if using 2D or 3D vectors, compute the quotient
-		// else throw an exception
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v1 = Prompt::get2DVector("\nCreate vector 1 ~\n");
@@ -133,7 +133,11 @@ void CalculatorDriver::division()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
+	{
+		Console::write(e.what());
+	}
+	catch (const OperationException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -147,7 +151,7 @@ void CalculatorDriver::angle()
 	try
 	{
 		// if using 2D or 3D vectors, compute the angle
-		// else throw an exception
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v1 = Prompt::get2DVector("\nCreate vector 1 ~\n");
@@ -165,7 +169,11 @@ void CalculatorDriver::angle()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
+	{
+		Console::write(e.what());
+	}
+	catch (const OperationException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -178,9 +186,9 @@ void CalculatorDriver::crossProduct()
 
 	try
 	{
-		// if using 3D vectors, compute the difference
+		// if using 2D or 3D vectors, compute the cross product
 		// cannot compute the cross product of 2D vectors
-		// else throw an exception
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 			throw OperationException("\nCannot find the cross product of two 2D vectors.\n");
 		else if (dimension == 3)
@@ -193,11 +201,11 @@ void CalculatorDriver::crossProduct()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const OperationException& e)
+	catch (const DimensionException & e)
 	{
 		Console::write(e.what());
 	}
-	catch (const DimensionException& e)
+	catch (const OperationException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -211,7 +219,7 @@ void CalculatorDriver::dotProduct()
 	try
 	{
 		// if using 2D or 3D vectors, compute the dot product
-		// else throw an exception
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v1 = Prompt::get2DVector("\nCreate vector 1 ~\n");
@@ -229,7 +237,7 @@ void CalculatorDriver::dotProduct()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -242,8 +250,8 @@ void CalculatorDriver::magnitude()
 
 	try
 	{
-		// if using a 2D or 3D vector, compute the magnitude
-		// else throw an exception
+		// if using 2D or 3D vectors, compute the magnitude
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v = Prompt::get2DVector("\nCreate a vector ~\n");
@@ -259,7 +267,7 @@ void CalculatorDriver::magnitude()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -273,7 +281,7 @@ void CalculatorDriver::projection()
 	try
 	{
 		// if using 2D or 3D vectors, compute the projection
-		// else throw an exception
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v1 = Prompt::get2DVector("\nCreate vector 1 ~\n");
@@ -291,7 +299,11 @@ void CalculatorDriver::projection()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
+	{
+		Console::write(e.what());
+	}
+	catch (const OperationException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -304,8 +316,8 @@ void CalculatorDriver::unit()
 
 	try
 	{
-		// if using a 2D or 3D vector, compute the unit vector
-		// else throw an exception
+		// if using 2D or 3D vectors, compute the unit vector
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v = Prompt::get2DVector("\nCreate a vector ~\n");
@@ -321,7 +333,11 @@ void CalculatorDriver::unit()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
+	{
+		Console::write(e.what());
+	}
+	catch (const OperationException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch
@@ -335,7 +351,7 @@ void CalculatorDriver::scalarMultiplication()
 	try
 	{
 		// if using 2D or 3D vectors, compute the product of scalar multiplication
-		// else throw an exception
+		// handle dimension and operation exceptions
 		if (dimension == 2)
 		{
 			Vector2D v = Prompt::get2DVector("\nCreate a vector ~\n");
@@ -353,7 +369,7 @@ void CalculatorDriver::scalarMultiplication()
 		else
 			throw DimensionException("\nTried to use an unknown dimension.\n"); // end if-else
 	}
-	catch (const DimensionException& e)
+	catch (const DimensionException & e)
 	{
 		Console::write(e.what());
 	} // end try-catch

@@ -9,7 +9,7 @@
 
 #include "VectorOperations.h"
 
-double VectorOperations::getAngle(Vector2D& v1, Vector2D& v2)
+double VectorOperations::getAngle(Vector2D & v1, Vector2D & v2)
 {
 	double angle = 0.0, dotProduct = 0.0, v1Magnitude = 0.0, v2Magnitude = 0.0;
 
@@ -27,7 +27,7 @@ double VectorOperations::getAngle(Vector2D& v1, Vector2D& v2)
 	return angle;
 } // end getAngle
 
-double VectorOperations::getAngle(Vector3D& v1, Vector3D& v2)
+double VectorOperations::getAngle(Vector3D & v1, Vector3D & v2)
 {
 	double angle = 0.0, dotproduct = 0.0, v1Magnitude = 0.0, v2Magnitude = 0.0;
 
@@ -45,7 +45,7 @@ double VectorOperations::getAngle(Vector3D& v1, Vector3D& v2)
 	return angle;
 } // end getAngle
 
-Vector3D VectorOperations::getCrossProduct(Vector3D& v1, Vector3D& v2)
+Vector3D VectorOperations::getCrossProduct(Vector3D & v1, Vector3D & v2)
 {
 	double x1 = 0.0, y1 = 0.0, z1 = 0.0,
 		x2 = 0.0, y2 = 0.0, z2 = 0.0,
@@ -67,7 +67,7 @@ Vector3D VectorOperations::getCrossProduct(Vector3D& v1, Vector3D& v2)
 	return crossProduct;
 } // end getCrossProduct
 
-double VectorOperations::getDotProduct(Vector2D& v1, Vector2D& v2)
+double VectorOperations::getDotProduct(Vector2D & v1, Vector2D & v2)
 {
 	double dotProduct = 0.0;
 
@@ -76,7 +76,7 @@ double VectorOperations::getDotProduct(Vector2D& v1, Vector2D& v2)
 	return dotProduct;
 } // end getDotProduct
 
-double VectorOperations::getDotProduct(Vector3D& v1, Vector3D& v2)
+double VectorOperations::getDotProduct(Vector3D & v1, Vector3D & v2)
 {
 	double dotProduct = 0.0;
 
@@ -87,7 +87,7 @@ double VectorOperations::getDotProduct(Vector3D& v1, Vector3D& v2)
 	return dotProduct;
 } // end getDotProduct
 
-double VectorOperations::getMagnitude(Vector2D& v)
+double VectorOperations::getMagnitude(Vector2D & v)
 {
 	double magnitude = 0.0;
 
@@ -96,7 +96,7 @@ double VectorOperations::getMagnitude(Vector2D& v)
 	return magnitude;
 } // end getMagnitude
 
-double VectorOperations::getMagnitude(Vector3D& v)
+double VectorOperations::getMagnitude(Vector3D & v)
 {
 	double magnitude = 0.0;
 
@@ -107,7 +107,7 @@ double VectorOperations::getMagnitude(Vector3D& v)
 	return magnitude;
 } // end getMagnitude
 
-Vector2D VectorOperations::getProjection(Vector2D& v1, Vector2D& v2)
+Vector2D VectorOperations::getProjection(Vector2D & v1, Vector2D & v2)
 {
 	double x1, y1, dotProduct, magnitude, multiplier;
 	Vector2D projection;
@@ -130,7 +130,7 @@ Vector2D VectorOperations::getProjection(Vector2D& v1, Vector2D& v2)
 	return projection;
 } // end getProjection
 
-Vector3D VectorOperations::getProjection(Vector3D& v1, Vector3D& v2)
+Vector3D VectorOperations::getProjection(Vector3D & v1, Vector3D & v2)
 {
 	double x1 = 0.0, y1 = 0.0, z1 = 0.0,
 		dotProduct = 0.0, magnitude = 0.0, multiplier = 0.0;
@@ -155,7 +155,7 @@ Vector3D VectorOperations::getProjection(Vector3D& v1, Vector3D& v2)
 	return projection;
 } // end getProjection
 
-Vector2D VectorOperations::getUnit(Vector2D& v)
+Vector2D VectorOperations::getUnit(Vector2D & v)
 {
 	double x = 0.0, y = 0.0, magnitude = 0.0;
 	Vector2D unit;
@@ -173,7 +173,7 @@ Vector2D VectorOperations::getUnit(Vector2D& v)
 	return unit;
 } // end getUnit
 
-Vector3D VectorOperations::getUnit(Vector3D& v)
+Vector3D VectorOperations::getUnit(Vector3D & v)
 {
 	double x = 0.0, y = 0.0, z = 0.0, magnitude = 0.0;
 	Vector3D unit;
@@ -192,7 +192,7 @@ Vector3D VectorOperations::getUnit(Vector3D& v)
 	return unit;
 } // end getUnit
 
-Vector2D VectorOperations::getScalarMultiple(Vector2D& v, double multiplier)
+Vector2D VectorOperations::getScalarMultiple(Vector2D & v, double multiplier)
 {
 	double x = 0.0, y = 0.0;
 	Vector2D scalarMultiple;
@@ -204,7 +204,7 @@ Vector2D VectorOperations::getScalarMultiple(Vector2D& v, double multiplier)
 	return scalarMultiple;
 } // end getScalarMultiple
 
-Vector3D VectorOperations::getScalarMultiple(Vector3D& v, double multiplier)
+Vector3D VectorOperations::getScalarMultiple(Vector3D & v, double multiplier)
 {
 	double x = 0.0, y = 0.0, z = 0.0;
 	Vector3D scalarMultiple;

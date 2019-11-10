@@ -72,22 +72,18 @@ void MainMenu::parse()
 	case 0:
 		break;
 	case 1:
-		Dimension::setDimension(2);
-
 		do
 		{
+			Dimension::setDimension(2);
 			calculatorMenu->display();
 		} while (calculatorMenu->getSelection() != 0);
-
 		break;
 	case 2:
-		Dimension::setDimension(3);
-
 		do
 		{
+			Dimension::setDimension(3);
 			calculatorMenu->display();
 		} while (calculatorMenu->getSelection() != 0);
-
 		break;
 	case 3:
 		// decimal precision can be between 0 and 15

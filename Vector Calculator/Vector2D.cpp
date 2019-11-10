@@ -66,22 +66,22 @@ const std::string Vector2D::toString(const int precision)
 	return ss.str();
 } // end toString
 
-const Vector2D Vector2D::operator+(const Vector2D& v)
+const Vector2D Vector2D::operator+(const Vector2D & v)
 {
 	return Vector2D(x + v.x, y + v.y);
 } // end overloaded operator +
 
-const Vector2D Vector2D::operator-(const Vector2D& v)
+const Vector2D Vector2D::operator-(const Vector2D & v)
 {
 	return Vector2D(x - v.x, y - v.y);
 } // end overloaded operator -
 
-const Vector2D Vector2D::operator*(const Vector2D& v)
+const Vector2D Vector2D::operator*(const Vector2D & v)
 {
 	return Vector2D(x * v.x, y * v.y);
 } // end overloaded operator *
 
-const Vector2D Vector2D::operator/(const Vector2D& v) const throw (OperationException)
+const Vector2D Vector2D::operator/(const Vector2D & v)
 {
 	// if any of the denominators are zero, throw an OperationException
 	// else compute and return the quotient

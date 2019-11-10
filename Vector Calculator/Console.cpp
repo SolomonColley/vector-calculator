@@ -10,14 +10,14 @@
 
 void Console::clear()
 {
-#ifdef _WIN32 || _WIN64
+#ifdef _WIN32
 	system("cls");
 #else
 	system("clear");
 #endif
 } // end clearScreen
 
-void Console::write(const std::string& text)
+void Console::write(const std::string & text)
 {
 	std::cout << text;
 } // end writeString

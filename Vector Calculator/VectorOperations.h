@@ -24,7 +24,7 @@ public:
 	/// <param name="v1">vector 1</param>
 	/// <param name="v2">vector 2</param>
 	/// <returns>the angle between v1 and v2</returns>
-	static double getAngle(Vector2D& v1, Vector2D& v2) throw (OperationException);
+	static double getAngle(Vector2D& v1, Vector2D& v2);
 
 	/// <summary>
 	/// Gets the angle between 2 3D vectors.
@@ -32,7 +32,7 @@ public:
 	/// <param name="v1">vector 1</param>
 	/// <param name="v2">vector 2</param>
 	/// <returns>the angle between v1 and v2</returns>
-	static double getAngle(Vector3D& v1, Vector3D& v2) throw (OperationException);
+	static double getAngle(Vector3D& v1, Vector3D& v2);
 
 	/// <summary>
 	/// Gets the cross product of 2 3D vectors.
@@ -78,7 +78,7 @@ public:
 	/// <param name="v1">vector 1</param>
 	/// <param name="v2">vector 2</param>
 	/// <returns>the projection of v1 and v2</returns>
-	static Vector2D getProjection(Vector2D& v1, Vector2D& v2) throw (OperationException);
+	static Vector2D getProjection(Vector2D& v1, Vector2D& v2);
 
 	/// <summary>
 	/// Gets the projection of two 3D vectors.
@@ -86,21 +86,21 @@ public:
 	/// <param name="v1">vector 1</param>
 	/// <param name="v2">vector 2</param>
 	/// <returns>the projection of v1 and v2</returns>
-	static Vector3D getProjection(Vector3D& v1, Vector3D& v2) throw (OperationException);
+	static Vector3D getProjection(Vector3D& v1, Vector3D& v2);
 
 	/// <summary>
 	/// Gets the unit vector of one 2D vector.
 	/// </summary>
 	/// <param name="v">the 2D vector</param>
 	/// <returns>the unit vector of v</returns>
-	static Vector2D getUnit(Vector2D& v) throw (OperationException);
+	static Vector2D getUnit(Vector2D& v);
 
 	/// <summary>
 	/// Gets the unit vector of one 3D vector.
 	/// </summary>
 	/// <param name="v">the 3D vector</param>
 	/// <returns>the unit vector of v</returns>
-	static Vector3D getUnit(Vector3D& v) throw (OperationException);
+	static Vector3D getUnit(Vector3D& v);
 
 	/// <summary>
 	/// Gets the product of one 2D vector using a scalar multiplier.
@@ -108,7 +108,7 @@ public:
 	/// <param name="v">the 2D vector</param>
 	/// <param name="multiplier">the scalar multiplier</param>
 	/// <returns>the product of v and the scalar multiplier</returns>
-	static Vector2D getScalarMultiple(Vector2D& v, double multiplier) throw (OperationException);
+	static Vector2D getScalarMultiple(Vector2D& v, double multiplier);
 
 	/// <summary>
 	/// Gets the product of one 3D vector using a scalar multiplier.
@@ -116,6 +116,6 @@ public:
 	/// <param name="v">the 2D vector</param>
 	/// <param name="multiplier">the scalar multiplier</param>
 	/// <returns>the product of v and the scalar multiplier</returns>
-	static Vector3D getScalarMultiple(Vector3D& v, double multiplier) throw (OperationException);
+	static Vector3D getScalarMultiple(Vector3D& v, double multiplier);
 }; // end VectorOperations
 

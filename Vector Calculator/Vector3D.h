@@ -109,7 +109,7 @@ public:
 	/// </summary>
 	/// <param name="v">a 3D vector</param>
 	/// <returns>the product of 2 3D vectors</returns>
-	const Vector3D operator/(const Vector3D& v) const throw (OperationException);
+	const Vector3D operator/(const Vector3D& v);
 private:
 	double x, y, z; // x-, y-, and z-values of the 3D vector
 }; // end Vector3D
